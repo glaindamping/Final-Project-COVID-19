@@ -1,19 +1,25 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from 'react';
+import {View} from 'react-native';
+import Header1 from "./src/components/Header1";
+import Card from './src/components/Card';
+import Layout2 from './src/components/Layout2';
+import Header2 from "./src/components/Header2";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+class App extends Component {
+
+  render() {
+     return(
+      <View style={{backgroundColor: "#071e3d"}}>
+        <Header1/>
+        <Layout2/>
+        <Header2/>
+        <Card/>
+      </View>
+     
+    )
+  }
+};
+
+export default App;
